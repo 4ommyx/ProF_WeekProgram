@@ -1,26 +1,16 @@
 #include <stdio.h>
 
-int main (){
-    float bmi , w , h ;
-    printf("Enter your weight (KG) : ");
-    scanf("%f",&w);
-    printf("Enter your height (M) : ");
-    scanf("%f",&h);
-    bmi = w / (h * h);
-    printf("Your bmi is = %.2f\n",bmi);
-    
-    if(bmi>=30){
-        printf("fat\n");
+int main()
+{
 
-    } else if (bmi>=25.0){
-        printf("high\n");
+    int p, t; // p=people t=total
 
-    } else if (bmi>=18.5){
-        printf("balance\n");
-        
-    } else {
-        printf("low\n");
+    printf("Enter your people : ");
+    scanf("%d", &p);
 
-    }
+    t = (p * (p - 1)) / 2; //สูตรรร
 
+    printf("Answer is : %d", t);
+
+    return 0;
 }
