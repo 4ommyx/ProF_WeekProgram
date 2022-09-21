@@ -1,24 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main (){
-    float a , b ;
-    printf("Enter your number 1 : ");
-    scanf("%f",&a);
-    printf("Enter your number 2 : ");
-    scanf("%f",&b);
+int main()
+{
+    int p, t = 0;
 
-        printf("Answer 1 = %.2f \n" , a+b);
-        printf("Answer 2 = %.2f \n" , a-b);
-        printf("Answer 3 = %.2f \n" , a*b);
-        printf("Answer 4 = %.2f \n" , a/b);
+    printf("Enter your people : ");
+    scanf("%d", &p);
+    int pr = p - 1;
+    for (int i = pr; i > 0; i--)
+    {
+        t = t + i;
+    }
+    t = t * 2;
+    printf("Answer is : %d", t);
 
-        return 0 ;
-        
-
-
-
-
-
-
-    
+    return 0;
 }
